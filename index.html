@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>محمد عثمان کی ویب سائٹ</title>
-  <style>
-    body {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
-      background-color: #f9f9f9;
-      color: #222;
-      text-align: center;
-      padding: 50px;
-      direction: rtl;
-    }
-    h1 {
-      color: #0066cc;
-      font-size: 36px;
-    }
-    p {
-      font-size: 20px;
-    }
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 30px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>محمد حسین</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            text-align: center;
+            color: white;
+            direction: rtl;
+            padding: 50px 20px;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        img {
+            width: 180px;
+            border-radius: 100px;
+            border: 4px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #fff700;
+            text-shadow: 2px 2px #000000;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #25D366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #1ebe5d;
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <h1>السلام علیکم</h1>
-    <p>میرا نام محمد عثمان ہے۔ یہ میری پہلی اردو ویب سائٹ ہے جو میں نے مصنوعی ذہانت کی مدد سے بنائی ہے۔</p>
-    <p>میں اردو میں ویڈیوز، ایپس اور دلچسپ پراجیکٹس پر کام کر رہا ہوں۔</p>
-  </div>
+    <img src="profile.jpg" alt="Mohammed Hussain">
+    <h1>وی آئی پی محمد حسین</h1>
+    <p>خوش آمدید! یہ میری پرسنل وی آئی پی ویب سائٹ ہے۔ آپ یہاں مجھ سے رابطہ بھی کر سکتے ہیں۔</p>
+
+    <a class="btn" href="https://wa.me/923140430778" target="_blank">واٹس ایپ پر رابطہ کریں</a>
 </body>
 </html>
