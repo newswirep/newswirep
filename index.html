@@ -8,9 +8,9 @@
         body {
             margin: 0;
             font-family: 'Noto Nastaliq Urdu', serif;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background: linear-gradient(45deg, #1d4350, #a43931);
             background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            animation: gradientBG 20s ease infinite;
             text-align: center;
             color: white;
             direction: rtl;
@@ -22,24 +22,29 @@
             100% { background-position: 0% 50%; }
         }
         img {
-            width: 180px;
+            width: 200px;
             border-radius: 100px;
             border: 4px solid white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
         h1 {
-            font-size: 36px;
-            margin-top: 20px;
+            font-size: 40px;
             color: #fff700;
-            text-shadow: 2px 2px #000000;
+            text-shadow: 2px 2px #000;
         }
         p {
             font-size: 20px;
-            margin: 20px auto;
             max-width: 600px;
+            margin: 20px auto;
         }
         .btn {
-            margin-top: 25px;
+            display: inline-block;
+            margin: 20px 10px;
             padding: 12px 25px;
             background: #25D366;
             color: white;
@@ -53,13 +58,23 @@
         .btn:hover {
             background: #1ebe5d;
         }
+        iframe {
+            margin-top: 30px;
+            width: 90%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body>
     <img src="profile.jpg" alt="Mohammed Hussain">
     <h1>وی آئی پی محمد حسین</h1>
-    <p>خوش آمدید! یہ میری پرسنل وی آئی پی ویب سائٹ ہے۔ آپ یہاں مجھ سے رابطہ بھی کر سکتے ہیں۔</p>
+    <p>خوش آمدید! یہ میری ذاتی وی آئی پی ویب سائٹ ہے۔ آپ نیچے میرا ویڈیو دیکھ سکتے ہیں یا مجھ سے رابطہ کر سکتے ہیں۔</p>
 
     <a class="btn" href="https://wa.me/923140430778" target="_blank">واٹس ایپ پر رابطہ کریں</a>
+
+    <iframe src="https://www.youtube.com/embed/5-pH7h526bo" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
